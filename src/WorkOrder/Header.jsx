@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
   tableRow: {
     flexDirection: 'row',
     justifyContent: 'center',
-    width:'100vw',
+    width: '100vw',
   },
   detailColumn: {
     marginBottom: '10px',
@@ -26,24 +26,7 @@ const styles = StyleSheet.create({
     fontSize: '8px',
     padding: 4
   },
-  chip: {
-    alignItems: 'center',
-    borderRadius: '4px',
-    marginLeft: 52,
-    marginRight: 4,
-    marginBottom: 5
-  },
-  leftColumn: {
-    flexDirection: 'column',
-    width: 36,
-    marginRight: 10,
-    paddingLeft: 4,
-    marginTop: 4
-  },
-  image: {
-    width: 90,
-    height: 28
-  },
+
   mainContainer: {
     flexDirection: 'column',
     marginBottom: 0,
@@ -52,6 +35,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'flex-start',
     justifyContent: 'flex-end'
+  },
+  head1: {
+    flexDirection: 'row',
+    backgroundColor: '#FFB74D',
+    justifyContent: 'center',
+    width: '100%',
   },
   title: {
     color: textPrimary,
@@ -72,79 +61,79 @@ const styles = StyleSheet.create({
   flex25: { flex: '2.5 1 0px' },
   flex100: { flex: '10 1 0px' },
 
-  head1:{
-    flexDirection: 'row',
-    backgroundColor:'#FFB74D',
-    justifyContent: 'center',
-    width: '100%',
-  },
-
-  head2:{
-    flexDirection: 'row',
-    alignItems:'center',
-    justifyContent: 'stretch',
-    width: '100%',
-    textAlign: 'center',
-  },
-  head2_con:{
-    borderLeft:'1px solid #d4d4d4',
-    borderRight:'1px solid #d4d4d4',
-    padding:'8',
-  },
-  head3:{
-    marginTop: '0',
-  },
-
-  border:{
+  border: {
     border: '1px solid #d4d4d4',
   },
 
-  title:{
-    fontSize: '10',
+  title: {
+    fontSize: '12',
     fontWeight: 'bold',
     padding: '3',
   },
 
-  title1:{
-    backgroundColor:'#FFB74D',
+  title1: {
+    backgroundColor: '#FFB74D',
     fontSize: '8',
   },
-  title2:{
-    backgroundColor:'#FFB74D',
-    fontSize: '8',
+  title2: {
+    backgroundColor: '#FFB74D',
+    fontSize: '10',
     padding: '3',
   },
-  description:{
+
+  title3: {
+    fontSize: '10',
+    fontWeight: "heavy",
+  },
+
+  work_det:{
+    alignItems:'center',
+    justifyContent:'center',
+  },
+
+  work_row: {
+    fontSize: '10',
+    fontWeight: "500",
+    paddingTop:'10px',
+  },
+
+  backgroundColorGrand: {
+    backgroundColor: '#FFB74D',
+    padding: '5',
+    textAlign:'center',
+  },
+
+  description: {
     fontSize: '8',
     fontWeight: '400',
     padding: '0',
-    lineHeight:'1.4',
-  },
-  
-  tableflex:{
-    flexDirection: 'row',
-    display:'flex',
+    lineHeight: '1.4',
   },
 
-  tab1:{
-    border: '1px solid #d4d4d4',
-    fontSize: '8',
-    padding: '2',
-    lineHeight:'1', 
-    width:'100px',
+  tableflex: {
+    flexDirection: 'row',
+    display: 'flex',
   },
-  tab2:{
-    width:'200px',
-  },
-  description1:{
+
+  description1: {
     fontSize: '8',
     padding: '2',
   },
-  paddingx:{
-    paddingHorizontal:'5',     
+  paddingx: {
+    paddingHorizontal: '5',
   },
-  paddingy:{
-    paddingVertical:'5',     
+  paddingy: {
+    paddingVertical: '5',
+  },
+  signbox: {
+    display: 'flex',
+  },
+  signbox1: {
+    height: '40px',
+    border: '1px solid #D4D4D4',
+    textAlign: 'left',
+    alignSelf: 'flex-end',
+    padding:'4',
   },
 
 });
@@ -152,20 +141,27 @@ const styles = StyleSheet.create({
 const Header = () => {
   return (
 
-    
+
 
     <View style={styles.mainContainer}>
 
-        <View style={[styles.tableRow, styles.head1]}>
-            <Text style={styles.title}>PROMECH INDUSTRIES PVT LTD</Text>
-        </View>
-
-      <View style={[styles.row, styles.head2]}>
-        <Text style={[styles.title, styles.head2_con, styles.flex06]}>Work Order{'\n'}P/WO/22-23/000043</Text>
-        <Text style={[styles.title, styles.head2_con, styles.flex06]}>WORK ORDER FORM</Text>
-        <Text style={[styles.title, styles.head2_con, styles.flex06]}>15-06-2024</Text>
+      <View style={[styles.tableRow, styles.head1]}>
+        <Text style={styles.title}>PROMECH INDUSTRIES PVT LTD</Text>
       </View>
-      
+
+
+
+      <View>
+        <View style={[styles.row, styles.signbox]}>
+          <Text style={[styles.flex20, styles.signbox1, styles.work_row]}>Work Order {'\n'}P/WO/22-23/000043</Text>
+          <Text style={[styles.flex20, styles.signbox1, styles.work_row]}>Work Order Form</Text>
+          <Text style={[styles.flex20, styles.signbox1, styles.work_row]}>15-06-2023</Text>
+        </View>
+      </View>
+  
+        {/* <View style={[styles.backgroundColorGrand]}>
+          <Text style={styles.title3}>PRODUCTION DETAILS</Text>
+        </View> */}
 
     </View>
 
