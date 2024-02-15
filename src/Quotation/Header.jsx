@@ -2,10 +2,18 @@
 // third-party
 import { Text, View, Image, StyleSheet, } from '@react-pdf/renderer';
 import logoImage from '../assets/images/logo.png';
+
+import RobotoBold from '../assets/fonts/Roboto/Roboto-Bold.ttf';
+import { Font } from '@react-pdf/renderer';
+
+
 // assets
 // import Logo from 'assets/images/image.png';
 const textPrimary = '#262626';
 const textSecondary = '#8C8C8C';
+
+Font.register({ family: 'Roboto-Bold', src: RobotoBold });
+
 const styles = StyleSheet.create({
 
   container: {
@@ -55,7 +63,8 @@ const styles = StyleSheet.create({
   },
   title: {
     color: textPrimary,
-    fontSize: '8px'
+    fontSize: '8px',
+    fontFamily: "Roboto-Bold",
   },
   caption: {
     color: textSecondary,
@@ -69,13 +78,14 @@ const styles = StyleSheet.create({
     backgroundColor:'#FFB74D',
     justifyContent: 'center',
     width: '100%',
+    padding:'5',
   },
 
   head2:{
     flexDirection: 'row',
     justifyContent: 'left',
     width: '100%',
-    marginTop: '6',
+    // marginTop: '6',
   },
   head3:{
     marginTop: '0',
@@ -95,23 +105,26 @@ const styles = StyleSheet.create({
 
   title:{
     fontSize: '10',
-    fontWeight: 'bold',
+    fontFamily: "Roboto-Bold",
     padding: '3',
+
   },
 
   title1:{
     backgroundColor:'#FFB74D',
+    fontFamily: "Roboto-Bold",
     fontSize: '8',
   },
   title2:{
     backgroundColor:'#FFB74D',
+    fontFamily: "Roboto-Bold",
     fontSize: '8',
     padding: '3',
   },
   description:{
     fontSize: '8',
     fontWeight: '400',
-    padding: '0',
+    padding: '2',
     lineHeight:'1.4',
   },
   logoImages:{
@@ -124,19 +137,28 @@ const styles = StyleSheet.create({
     display:'flex',
   },
 
+  address:{
+    fontFamily: "Roboto-Bold",
+  },
+
   tab1:{
     border: '1px solid #d4d4d4',
     fontSize: '8',
     padding: '2',
     lineHeight:'1', 
     width:'100px',
+    alignSelf: 'stretch',
+    fontFamily: "Roboto-Bold",
   },
   tab2:{
     width:'200px',
+    alignSelf: 'stretch',
+    fontFamily: "Roboto-Bold",
   },
   description1:{
     fontSize: '8',
-    padding: '2',
+    padding: '3',
+    // fontWeight:'bolder',
   },
   paddingx:{
     paddingHorizontal:'5',     
@@ -161,20 +183,20 @@ const Header = () => {
         
         <View style={[styles.head2, styles.border ]}>
             <View style={[styles.head2_con1]}>
-              <Text style={[styles.title, styles.title1, styles.paddingy]}>PROMECH INDUSTRIES PRIVATE LIMITED</Text>
+              <Text style={[styles.title]}>PROMECH INDUSTRIES PRIVATE LIMITED</Text>
               <Text style={[styles.description, styles.paddingx]}>7/237 A, Pattanam to Peedampalli Main Road, Nagamanaickenpalayam,{'\n'} Coimbatore - 641016, Tamil Nadu, India.</Text>
-               <Text style={[styles.description, styles.paddingx]}>Cell : +91 99943 99996 | +91 99943 99006  {'\n'} Email : promech5@yahoo.co.in | Web: www.marksorter.com </Text>
+              <Text style={[styles.description, styles.paddingx]}>Cell : +91 99943 99996 | +91 99943 99006  {'\n'} Email : promech5@yahoo.co.in | Web: www.marksorter.com </Text>
             </View>
             <View style={[styles.head2_con2]}>
                 <Image src={logoImage} style={[styles.image, styles.logoImages]} />
             </View>
         </View>
 
-        <View style={[styles.head2, styles.border, styles.head3 ]}>
+        <View style={[styles.head2, styles.border]}>
 
             <View style={[styles.head2_con1]}>
               <Text style={[styles.title2]}>BILLING ADDRESS</Text>
-              <Text style={[styles.description, styles.paddingx]}>M/S ALVS VENTURES{'\n'}PATTAVAYAL, NELLAKOTTAI THE NILGIRIS,{'\n'}DINDUGAL -643240, TAMILNADU</Text>
+              <Text style={[styles.description, styles.paddingx, styles.address]}>M/S ALVS VENTURES{'\n'}PATTAVAYAL, NELLAKOTTAI THE NILGIRIS,{'\n'}DINDUGAL -643240, TAMILNADU</Text>
               <Text style={[styles.description, styles.paddingx]}>Phone No : 9487345175      Email Id : alvsventures@gmail.com </Text>
             </View>
 

@@ -203,6 +203,10 @@ const styles = StyleSheet.create({
     lineHeight:'1.4',
   },
 
+  fontwgt:{
+    fontWeight:'bolder',
+  },
+
   hght:{
     height:'40px',
   },

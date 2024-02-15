@@ -7,8 +7,8 @@ function App() {
   return (
     <div className='main1'>
       <PDFViewer width='100%' height='100%'>
-        {/* <ExportPDFView /> */}
-        <ExportOrder/>
+        <ExportPDFView />
+        {/* <ExportOrder/> */}
       </PDFViewer>
     </div>
   );
