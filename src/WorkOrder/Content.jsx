@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     fontSize: '10px'
   },
   tableHeader: {
-    justifyContent: 'space-between',
+    display:'flex',
     margin: 0,
     paddingBottom: '0',
   },
@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
   },
   title3: {
     fontSize: '10px',
-    fontWeight: "heavy",
+    fontFamily: "Roboto-Bold",
   },
   title2: {
     fontSize: '8px',
@@ -121,6 +121,7 @@ const styles = StyleSheet.create({
 
   changes: {
     textAlign: 'center',
+    padding:'3',
   },
 
   signature: {
@@ -152,24 +153,25 @@ const styles = StyleSheet.create({
     display: 'flex',
   },
   signbox1: {
-    height: '50px',
+    height: '60px',
     border: '1px solid #D4D4D4',
     textAlign:'center',
-    alignSelf: 'flex-end',
+    alignSelf: 'stretch',
     fontSize:'10',
+    fontFamily: "Roboto-Bold",
   },
 
   tableContent: {
     color: "black",
-    fontSize: '10px',
-    fontWeight: '500',
+    fontSize: '10',
     border: '1px solid #D4D4D4',
     padding: '6',
     lineHeight: '1.4',
+    alignSelf:'stretch'
   },
 
   fs8: {
-    fontSize: '8',
+    fontSize: '9',
   },
 
   tableRow1: {
@@ -204,23 +206,29 @@ const styles = StyleSheet.create({
   },
 
   fontwgt:{
-    fontWeight:'bolder',
+    fontFamily: "Roboto-Bold",
   },
 
   hght:{
-    height:'40px',
+    height:'60px',
+    alignSelf:'stretch',
+    padding: '5',
   },
 
   hght1:{
-    height:'30px',
+    height:'40px',
+    alignSelf: 'stretch',
+    padding:'5',
+  },
+
+  tab_right:{
+    fontFamily: "Roboto-Bold",
   },
 
   pad5:{
-    paddingTop:'35px',
+    paddingTop:'40px',
   },
 
-  amountSection: { margin: 0, paddingRight: 25, paddingTop: 16, justifyContent: 'flex-end', width: '196', },
-  amountRow: { margin: 0, width: '100%', justifyContent: 'space-between', },
   pb5: { paddingBottom: 5 },
   flex03: { flex: '0.3 0 0px' },
   flex07: { flex: '0.7 0 0px' },
@@ -242,104 +250,104 @@ const Content = () => {
   return (
     <View style={styles.container}>
 
-      <View style={[styles.backgroundColorGrand, styles.changes]}>
-        <Text style={styles.title3}>PRODUCTION DETAILS</Text>
+      <View style={[styles.backgroundColorGrand]}>
+        <Text style={[styles.title3, styles.changes]}>PRODUCTION DETAILS</Text>
       </View>
 
       <View style={[styles.table]}>
 
         <View style={[styles.row, styles.tableRow1]} >
-          <Text style={[styles.tableContent, styles.fs8, styles.flex20]}>Product Description</Text>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex20,]}>Trendz T20 - Chute</Text>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex20,]}>Delivery date</Text>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex20,]}>16/6/2022</Text>
+          <Text style={[styles.tableContent, styles.flex20]}>Product Description</Text>
+          <Text style={[styles.tableContent, styles.flex20, styles.tab_right]}>Trendz T20 - Chute</Text>
+          <Text style={[styles.tableContent, styles.flex20,]}>Delivery date</Text>
+          <Text style={[styles.tableContent, styles.flex20, styles.tab_right]}>16/6/2022</Text>
         </View>
 
         <View style={[styles.row, styles.tableRow1]} >
-          <Text style={[styles.tableContent, styles.fs8, styles.flex20]}>Req.Qty</Text>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex20,]}>1</Text>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex20,]}>Commodity</Text>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex20,]}>Dall</Text>
+          <Text style={[styles.tableContent, styles.flex20,]}>Req.Qty</Text>
+          <Text style={[styles.tableContent, styles.flex20, styles.tab_right]}>1</Text>
+          <Text style={[styles.tableContent, styles.flex20,]}>Commodity</Text>
+          <Text style={[styles.tableContent, styles.flex20, styles.tab_right]}>Dall</Text>
         </View>
 
         <View style={[styles.row, styles.tableRow1]}>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex06]}>MC Specification</Text>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex20]}>Primary-1, Secondary-1. Old machine Exchange mark trendz M Series</Text>
+          <Text style={[styles.tableContent, styles.flex06]}>MC Specification</Text>
+          <Text style={[styles.tableContent, styles.flex20, styles.tab_right]}>Primary-1, Secondary-1. Old machine Exchange mark trendz M Series</Text>
         </View>
         <View style={[styles.row, styles.tableRow1]}>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex06]}>MC Fram No</Text>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex20]}>1</Text>
+          <Text style={[styles.tableContent, styles.flex06]}>MC Fram No</Text>
+          <Text style={[styles.tableContent, styles.flex20, styles.tab_right]}>1</Text>
         </View>
         <View style={[styles.row, styles.tableRow1]}>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex06]}>Warranty</Text>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex20]}>One Year</Text>
+          <Text style={[styles.tableContent, styles.flex06]}>Warranty</Text>
+          <Text style={[styles.tableContent, styles.flex20, styles.tab_right]}>One Year</Text>
         </View>
         <View style={[styles.row, styles.tableRow1]}>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex06]}>Place</Text>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex20]}>Theni</Text>
+          <Text style={[styles.tableContent, styles.flex06]}>Place</Text>
+          <Text style={[styles.tableContent, styles.flex20, styles.tab_right]}>Theni</Text>
         </View>
         <View style={[styles.row, styles.tableRow1]}>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex06]}>Executive Name</Text>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex20]}>Ilayaraja.B</Text>
+          <Text style={[styles.tableContent, styles.flex06]}>Executive Name</Text>
+          <Text style={[styles.tableContent, styles.flex20, styles.tab_right]}>Ilayaraja.B</Text>
         </View>
 
       </View>  
 
-      <View style={[styles.backgroundColorGrand, styles.changes]}>
-        <Text style={styles.title3}>CHANGES</Text>
+      <View style={[styles.backgroundColorGrand]}>
+        <Text style={[styles.title3, styles.changes]}>CHANGES</Text>
       </View>
 
 
       <View style={[styles.table]}>
         
           <View style={[styles.row, styles.tableRow1]} >
-            <Text style={[styles.tableContent, styles.fs8, styles.flex07]}>S.No</Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex20,]}>Product Changes</Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex20,]}>Customer Changes</Text>
+            <Text style={[styles.tableContent, styles.flex07, styles.fontwgt]}>S.No</Text>
+            <Text style={[styles.tableContent, styles.flex20, styles.fontwgt]}>Product Changes</Text>
+            <Text style={[styles.tableContent, styles.flex20, styles.fontwgt]}>Customer Changes</Text>
           </View>
 
           <View style={[styles.row, styles.tableRow1]} >
-            <Text style={[styles.tableContent, styles.fs8, styles.flex07, styles.hght]}></Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex20, styles.hght]}></Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex20, styles.hght]}></Text>
+            <Text style={[styles.tableContent, styles.flex07, styles.hght]}>1</Text>
+            <Text style={[styles.tableContent, styles.flex20, styles.hght]}></Text>
+            <Text style={[styles.tableContent, styles.flex20, styles.hght]}></Text>
           </View>
 
           <View style={[styles.row, styles.tableRow1]} >
-            <Text style={[styles.tableContent, styles.fs8, styles.flex07, styles.hght]}></Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex20, styles.hght]}></Text>
-            <Text style={[styles.tableContent, styles.fs8, styles.flex20, styles.hght]}></Text>
+            <Text style={[styles.tableContent, styles.flex07, styles.hght]}>2</Text>
+            <Text style={[styles.tableContent, styles.flex20, styles.hght]}></Text>
+            <Text style={[styles.tableContent, styles.flex20, styles.hght]}></Text>
           </View>
 
       </View>
 
-      <View style={[styles.backgroundColorGrand, styles.changes]}>
-        <Text style={styles.title3}>DISPATCH DETAILS</Text>
+      <View style={[styles.backgroundColorGrand]}>
+        <Text style={[styles.title3, styles.changes]}>DISPATCH DETAILS</Text>
       </View>
 
       <View>
 
         <View style={[styles.tableRow1]} >
-          <Text style={[styles.tableContent, styles.fs8, styles.flex20, styles.hght]}></Text>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex20, styles.hght]}></Text>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex17, styles.hght]}></Text>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex14, styles.hght]}></Text>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex25, styles.hght]}></Text>
+          <Text style={[styles.tableContent, styles.flex20, styles.hght]}></Text>
+          <Text style={[styles.tableContent, styles.flex20, styles.hght]}></Text>
+          <Text style={[styles.tableContent, styles.flex17, styles.hght]}></Text>
+          <Text style={[styles.tableContent, styles.flex14, styles.hght]}></Text>
+          <Text style={[styles.tableContent, styles.flex25, styles.hght]}></Text>
         </View>
 
         <View style={[styles.tableRow1]} >
-          <Text style={[styles.tableContent, styles.fs8, styles.flex20, styles.hght]}></Text>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex20, styles.hght]}></Text>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex17, styles.hght]}></Text>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex14, styles.hght]}></Text>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex25, styles.hght]}></Text>
+          <Text style={[styles.tableContent, styles.flex20, styles.hght]}></Text>
+          <Text style={[styles.tableContent, styles.flex20, styles.hght]}></Text>
+          <Text style={[styles.tableContent, styles.flex17, styles.hght]}></Text>
+          <Text style={[styles.tableContent, styles.flex14, styles.hght]}></Text>
+          <Text style={[styles.tableContent, styles.flex25, styles.hght]}></Text>
         </View>
 
         <View style={[styles.tableRow1]} >
-          <Text style={[styles.tableContent, styles.fs8, styles.flex20, styles.hght]}></Text>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex20, styles.hght]}></Text>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex17, styles.hght]}></Text>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex14, styles.hght]}></Text>
-          <Text style={[styles.tableContent, styles.fs8, styles.flex25, styles.hght]}></Text>
+          <Text style={[styles.tableContent, styles.flex20, styles.hght]}></Text>
+          <Text style={[styles.tableContent, styles.flex20, styles.hght]}></Text>
+          <Text style={[styles.tableContent, styles.flex17, styles.hght]}></Text>
+          <Text style={[styles.tableContent, styles.flex14, styles.hght]}></Text>
+          <Text style={[styles.tableContent, styles.flex25, styles.hght]}></Text>
         </View>
 
       </View>  

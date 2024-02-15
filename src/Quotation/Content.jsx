@@ -201,13 +201,20 @@ const styles = StyleSheet.create({
   amountSection: { margin: 0, paddingRight: 25, paddingTop: 5, justifyContent: 'normal', width: '196', },
   amountRow: { margin: 0, width: '100%', justifyContent: 'flex-end', },
   pb5: { paddingBottom: 5 },
-  flex03: { flex: '0.3 1 0px' },
-  flex07: { flex: '0.7 1 0px' },
-  flex06: { flex: '0.6 1 0px' },
-  flex17: { flex: '1.7 1 0px' },
+  flex03: { flex: '0.3 0 0px' },
+  flex07: { flex: '0.7 0 0px' },
+  flex06: { flex: '0.6 0 0px' },
+  flex09: { flex: '0.9 0 0px' },
+  flex10: { flex: '1.0 0 0px' },
+  flex11: { flex: '1.1 0 0px' },
+  flex12: { flex: '1.2 0 0px' },
+  flex14: { flex: '1.4 0 0px' },
+  flex17: { flex: '1.7 0 0px' },
+  flex18: { flex: '1.8 0 0px' },
   flex20: { flex: '2 1 0px' },
-  flex25: { flex: '2.5 1 0px' },
-  flex100: { flex: '10 1 0px' }
+  flex22: { flex: '2.2 0 0px' },
+  flex25: { flex: '2.5 0 0px' },
+  flex100: { flex: '10 0 0px' }
 });
 
 const Content = () => {
@@ -299,7 +306,7 @@ const Content = () => {
           </View>
 
           <View style={[styles.border, styles.width]}>
-            <Text style={styles.tittleLetter}>INR - Ten Lakh Ninety Seven Thousand Four Hundred Only /-</Text>
+            <Text style={styles.tittleLetter}>INR - Ten Lakh Ninety Seven Thousand Four Hundred and Twenty Five Rupees Only /-</Text>
           </View>
 
         </View>

@@ -2,10 +2,14 @@
 // third-party
 import { Text, View, Image, StyleSheet, } from '@react-pdf/renderer';
 import logoImage from '../assets/images/logo.png';
+import RobotoBold from '../assets/fonts/Roboto/Roboto-Bold.ttf';
+import { Font } from '@react-pdf/renderer';
+
 // assets
 // import Logo from 'assets/images/image.png';
 const textPrimary = '#262626';
 const textSecondary = '#8C8C8C';
+Font.register({ family: 'Roboto-Bold', src: RobotoBold });
 const styles = StyleSheet.create({
 
   container: {
@@ -53,13 +57,20 @@ const styles = StyleSheet.create({
   padding1: {
     padding: '5px 5px 5px 5px',
   },
-  flex03: { flex: '0.3 1 0px' },
-  flex07: { flex: '0.7 1 0px' },
-  flex06: { flex: '0.6 1 0px' },
-  flex17: { flex: '1.7 1 0px' },
+  flex03: { flex: '0.3 0 0px' },
+  flex07: { flex: '0.7 0 0px' },
+  flex06: { flex: '0.6 0 0px' },
+  flex09: { flex: '0.9 0 0px' },
+  flex10: { flex: '1.0 0 0px' },
+  flex11: { flex: '1.1 0 0px' },
+  flex12: { flex: '1.2 0 0px' },
+  flex14: { flex: '1.4 0 0px' },
+  flex17: { flex: '1.7 0 0px' },
+  flex18: { flex: '1.8 0 0px' },
   flex20: { flex: '2 1 0px' },
-  flex25: { flex: '2.5 1 0px' },
-  flex100: { flex: '10 1 0px' },
+  flex22: { flex: '2.2 0 0px' },
+  flex25: { flex: '2.5 0 0px' },
+  flex100: { flex: '10 0 0px' },
 
   border: {
     border: '1px solid #d4d4d4',
@@ -67,23 +78,25 @@ const styles = StyleSheet.create({
 
   title: {
     fontSize: '12',
-    fontWeight: 'bold',
-    padding: '3',
+    fontFamily: "Roboto-Bold",
+    padding: '7',
   },
 
   title1: {
     backgroundColor: '#FFB74D',
     fontSize: '8',
+    fontFamily: "Roboto-Bold",
   },
   title2: {
     backgroundColor: '#FFB74D',
     fontSize: '10',
     padding: '3',
+    fontFamily: "Roboto-Bold",
   },
 
   title3: {
     fontSize: '10',
-    fontWeight: "heavy",
+    fontFamily: "Roboto-Bold",
   },
 
   work_det:{
@@ -95,6 +108,8 @@ const styles = StyleSheet.create({
     fontSize: '10',
     fontWeight: "500",
     paddingTop:'10px',
+    fontFamily: "Roboto-Bold",
+    textAlign:'center',
   },
 
   backgroundColorGrand: {
@@ -129,11 +144,10 @@ const styles = StyleSheet.create({
     display: 'flex',
   },
   signbox1: {
-    height: '40px',
     border: '1px solid #D4D4D4',
     textAlign: 'left',
-    alignSelf: 'flex-end',
-    padding:'4',
+    alignSelf:'stretch',
+    padding:'5',
   },
 
 });
@@ -149,8 +163,6 @@ const Header = () => {
         <Text style={styles.title}>PROMECH INDUSTRIES PVT LTD</Text>
       </View>
 
-
-
       <View>
         <View style={[styles.row, styles.signbox]}>
           <Text style={[styles.flex20, styles.signbox1, styles.work_row]}>Work Order {'\n'}P/WO/22-23/000043</Text>
@@ -158,10 +170,6 @@ const Header = () => {
           <Text style={[styles.flex20, styles.signbox1, styles.work_row]}>15-06-2023</Text>
         </View>
       </View>
-  
-        {/* <View style={[styles.backgroundColorGrand]}>
-          <Text style={styles.title3}>PRODUCTION DETAILS</Text>
-        </View> */}
 
     </View>
 
