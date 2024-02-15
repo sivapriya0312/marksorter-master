@@ -128,7 +128,7 @@ const styles = StyleSheet.create({
     backgroundColor:'#FFB74D',
     fontFamily: "Roboto-Bold",
     fontSize: '8',
-    padding: '3',
+    padding: '5',
   },
 
   description:{
@@ -155,7 +155,7 @@ const styles = StyleSheet.create({
   tab1:{
     border: '1px solid #d4d4d4',
     fontSize: '8',
-    padding: '2',
+    padding: '3',
     lineHeight:'1', 
     width:'100px',
     alignSelf: 'stretch',
@@ -169,8 +169,8 @@ const styles = StyleSheet.create({
   },
 
   description1:{
-    fontSize: '8',
-    padding: '3',
+    fontSize: '9',
+    padding: '4',
   },
 
   paddingx:{

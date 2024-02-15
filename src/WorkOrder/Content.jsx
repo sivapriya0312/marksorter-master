@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   },
 
   card: {
-    border: `1px solid black`,
+    border: '1px solid black',
     borderRadius: '2px',
     padding: '20px',
     width: '48%'
@@ -38,17 +38,11 @@ const styles = StyleSheet.create({
   tableTitle: {
     color: "black",
     fontSize: '10px',
-    fontWeight: '400',
     border: '1px solid #d4d4d4',
     padding: '8',
     // backgroundColor:'#FFB74D',
   },
 
-  // tableCell: {
-  //   color: "black",
-  //   fontSize: '8px',
-  //   padding:'4',
-  // },
   row: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -212,6 +206,7 @@ const styles = StyleSheet.create({
     padding: '4',
     lineHeight: '1.4',
   },
+
   tabwth25: {
     width: '50%',
     border: '1px solid #D4D4D4',
@@ -219,6 +214,7 @@ const styles = StyleSheet.create({
     padding: '4',
     lineHeight: '1.4',
   },
+
   tabwth75: {
     width: '100%',
     border: '1px solid #D4D4D4',
@@ -252,6 +248,7 @@ const styles = StyleSheet.create({
   },
 
   pb5: { paddingBottom: 5 },
+  
   flex03: { flex: '0.3 0 0px' },
   flex07: { flex: '0.7 0 0px' },
   flex06: { flex: '0.6 0 0px' },

@@ -56,17 +56,16 @@ const styles = StyleSheet.create({
   tableTitle: {
     color: "black",
     fontSize: '8px',
-    fontWeight: '400',
     border: '1px solid #d4d4d4',
     padding: '5',
     fontFamily: "Roboto-Bold",
     backgroundColor: '#FFB74D',
   },
 
-  tableCell: {
-    color: "black",
-    fontSize: '8px'
-  },
+  // tableCell: {
+  //   color: "black",
+  //   fontSize: '8px'
+  // },
 
   row: {
     flexDirection: 'row',
@@ -99,7 +98,7 @@ const styles = StyleSheet.create({
   tableRow: {
     alignItems: 'center',
     justifyContent: 'center',
-    // borderBottom: '1px solid #F0F0F0',
+    // borderBottom: '1px solid #F0F0F0', 
     paddingBottom: 3,
     paddingTop: 3,
     margin: 0,
@@ -109,7 +108,6 @@ const styles = StyleSheet.create({
   tableCell: {
     color: "black",
     fontSize: '8px',
-    fontWeight: '400',
     padding: '2',
   },
 
@@ -138,7 +136,7 @@ const styles = StyleSheet.create({
   },
 
   tittleLetter: {
-    fontSize: '8px',
+    fontSize: '9',
     padding: '5',
     fontFamily: "Roboto-Bold",
   },
@@ -149,7 +147,7 @@ const styles = StyleSheet.create({
   },
 
   title2: {
-    fontSize: '8px',
+    fontSize: '9',
     paddingTop: '2',
     fontFamily: "Roboto-Bold",
   },
@@ -165,12 +163,12 @@ const styles = StyleSheet.create({
   },
 
   signature1: {
-    width: '50%',
+    width: '60%',
   },
 
   title4: {
     fontSize: '8px',
-    lineHeight: '1.3',
+    lineHeight: '1.5',
     fontFamily: "Roboto-Bold",
   },
 
@@ -205,6 +203,13 @@ const styles = StyleSheet.create({
     padding: '3',
     lineHeight: '1.4',
     alignSelf: 'stretch'
+  },
+
+  tableBank:{
+    flexDirection: 'row',
+    alignItems: 'center',
+    display: 'flex',
+    marginBottom: 0,
   },
 
   tableRow1: {
@@ -305,24 +310,24 @@ const Content = () => {
             <Text style={[styles.tableTitle, styles.flex100]}>BANK DETAILS </Text>
           </View>
 
-          <View style={[styles.row, styles.tableRow]} >
-            <Text style={[styles.tableCell, styles.flex03, styles.tableleft]}>Bank Name</Text>
-            <Text style={[styles.tableCell, styles.flex07]}>HDFC Bank Ltd, CLASSIC TOWER,TRICHY ROAD,COIMBATORE-641018</Text>
+          <View style={[styles.row, styles.tableBank]} >
+            <Text style={[styles.tableContent, styles.flex03, styles.tableleft]}>Bank Name</Text>
+            <Text style={[styles.tableContent, styles.flex07]}>HDFC Bank Ltd, CLASSIC TOWER,TRICHY ROAD,COIMBATORE-641018</Text>
           </View>
 
-          <View style={[styles.row, styles.tableRow]} >
-            <Text style={[styles.tableCell, styles.flex03, styles.tableleft]}>Account Number </Text>
-            <Text style={[styles.tableCell, styles.flex07]}>00312320005743</Text>
+          <View style={[styles.row, styles.tableBank]} >
+            <Text style={[styles.tableContent, styles.flex03, styles.tableleft]}>Account Number </Text>
+            <Text style={[styles.tableContent, styles.flex07]}>00312320005743</Text>
           </View>
 
-          <View style={[styles.row, styles.tableRow]} >
-            <Text style={[styles.tableCell, styles.flex03, styles.tableleft]}>Account Name</Text>
-            <Text style={[styles.tableCell, styles.flex07]}>PROMECH INDUSTRIES PVT LTD</Text>
+          <View style={[styles.row, styles.tableBank]} >
+            <Text style={[styles.tableContent, styles.flex03, styles.tableleft]}>Account Name</Text>
+            <Text style={[styles.tableContent, styles.flex07]}>PROMECH INDUSTRIES PVT LTD</Text>
           </View>
 
-          <View style={[styles.row, styles.tableRow]} >
-            <Text style={[styles.tableCell, styles.flex03, styles.tableleft]}>IFSC Code</Text>
-            <Text style={[styles.tableCell, styles.flex07]}>HDFC0000031</Text>
+          <View style={[styles.row, styles.tableBank]} >
+            <Text style={[styles.tableContent, styles.flex03, styles.tableleft]}>IFSC Code</Text>
+            <Text style={[styles.tableContent, styles.flex07]}>HDFC0000031</Text>
           </View>
 
           <View style={[styles.border, styles.width]}>
@@ -335,37 +340,37 @@ const Content = () => {
 
           <View style={[styles.row, styles.amountSection]}>
             <View style={[styles.row, styles.amountRow]}>
-              <Text style={[styles.tableCell, styles.flex07]}>Gross Amount : </Text>
+              <Text style={[styles.tableCell, styles.flex06]}>Gross Amount :</Text>
               <Text style={[styles.tableCell, styles.flex03]}> 930000.00</Text>
             </View>
           </View>
           <View style={[styles.row, styles.amountSection]}>
             <View style={[styles.row, styles.amountRow]}>
-              <Text style={[styles.tableCell, styles.flex07]}>CGST ( 9.00 %) :</Text>
+              <Text style={[styles.tableCell, styles.flex06]}>CGST ( 9.00 %) :</Text>
               <Text style={[styles.tableCell, styles.flex03]}> 83700.00</Text>
             </View>
           </View>
           <View style={[styles.row, styles.amountSection]}>
             <View style={[styles.row, styles.amountRow]}>
-              <Text style={[styles.tableCell, styles.flex07]}>SGST ( 9.00 %) :</Text>
+              <Text style={[styles.tableCell, styles.flex06]}>SGST ( 9.00 %) :</Text>
               <Text style={[styles.tableCell, styles.flex03]}> 83700.00</Text>
             </View>
           </View>
           <View style={[styles.row, styles.amountSection]}>
             <View style={[styles.row, styles.amountRow]}>
-              <Text style={[styles.tableCell, styles.flex07]}>IGST ( 0.00 %) :</Text>
+              <Text style={[styles.tableCell, styles.flex06]}>IGST ( 0.00 %) :</Text>
               <Text style={[styles.tableCell, styles.flex03]}> 0.00</Text>
             </View>
           </View>
           <View style={[styles.row, styles.amountSection]}>
             <View style={[styles.row, styles.amountRow]}>
-              <Text style={[styles.tableCell, styles.flex07]}>Round Off :</Text>
+              <Text style={[styles.tableCell, styles.flex06]}>Round Off :</Text>
               <Text style={[styles.tableCell, styles.flex03]}> 0.00</Text>
             </View>
           </View>
           <View style={[styles.row, styles.amountSection, { marginTop: 2 }]}>
             <View style={[styles.row, styles.amountRow, styles.backgroundColorGrand]}>
-              <Text style={[styles.tableCell, styles.flex07]}>Grand Total:</Text>
+              <Text style={[styles.tableCell, styles.flex06]}>Grand Total:</Text>
               <Text style={[styles.tableCell, styles.flex03]}> 4325353</Text>
             </View>
           </View>
@@ -434,13 +439,11 @@ const Content = () => {
         </View>
         <View style={[styles.row, styles.tableRow]} >
           <Text style={[styles.tableCell, styles.flex03]}>8. Erection & Commissioning :</Text>
-          <Text style={[styles.tableCell, styles.flex07]}>The Price Quoted forthe Color Sorter and Air Compressor only. Elevator, Air Conditioner, Cabin
-            StorageHopper, Dust Collecting System and others are Customer's Scope.</Text>
+          <Text style={[styles.tableCell, styles.flex07]}>The Price Quoted forthe Color Sorter and Air Compressor only. Elevator, Air Conditioner, Cabin StorageHopper, Dust Collecting System and others are Customer's Scope.</Text>
         </View>
         <View style={[styles.row, styles.tableRow]} >
           <Text style={[styles.tableCell, styles.flex03]}>9. Tonnage :</Text>
-          <Text style={[styles.tableCell, styles.flex07]}>100 to 200 Kgs, per hour @ 1-2 % impurity contamination, if contamination increased the output will bedecreased. The Capacity of the machine based on the working environment like dust condition,cabin Temperature condition, etc...
-          </Text>
+          <Text style={[styles.tableCell, styles.flex07]}>100 to 200 Kgs, per hour @ 1-2 % impurity contamination, if contamination increased the output will bedecreased. The Capacity of the machine based on the working environment like dust condition,cabin Temperature condition, etc...</Text>
         </View>
 
       </View>
