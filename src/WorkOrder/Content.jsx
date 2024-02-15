@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     fontSize: '10px'
   },
   tableHeader: {
-    display:'flex',
+    display: 'flex',
     margin: 0,
     paddingBottom: '0',
   },
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
 
   changes: {
     textAlign: 'center',
-    padding:'3',
+    padding: '3',
   },
 
   signature: {
@@ -155,9 +155,9 @@ const styles = StyleSheet.create({
   signbox1: {
     height: '60px',
     border: '1px solid #D4D4D4',
-    textAlign:'center',
+    textAlign: 'center',
     alignSelf: 'stretch',
-    fontSize:'10',
+    fontSize: '10',
     fontFamily: "Roboto-Bold",
   },
 
@@ -165,9 +165,9 @@ const styles = StyleSheet.create({
     color: "black",
     fontSize: '10',
     border: '1px solid #D4D4D4',
-    padding: '6',
+    padding: '5',
     lineHeight: '1.4',
-    alignSelf:'stretch'
+    alignSelf: 'stretch'
   },
 
   fs8: {
@@ -175,58 +175,58 @@ const styles = StyleSheet.create({
   },
 
   tableRow1: {
-  flexDirection: 'row',
-  alignItems: 'center',
-  marginBottom: 0
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 0
   },
 
-  tableflex1:{
-    width:'100%',
+  tableflex1: {
+    width: '100%',
   },
-  tabwth1:{
-    width:'100%',
+  tabwth1: {
+    width: '100%',
     border: '1px solid #D4D4D4',
     fontSize: '9',
     padding: '4',
-    lineHeight:'1.4',
+    lineHeight: '1.4',
   },
-  tabwth25:{
-    width:'50%',
+  tabwth25: {
+    width: '50%',
     border: '1px solid #D4D4D4',
     fontSize: '8',
     padding: '4',
-    lineHeight:'1.4',
+    lineHeight: '1.4',
   },
-  tabwth75:{
-    width:'100%',
+  tabwth75: {
+    width: '100%',
     border: '1px solid #D4D4D4',
     fontSize: '8',
     padding: '4',
-    lineHeight:'1.4',
+    lineHeight: '1.4',
   },
 
-  fontwgt:{
+  fontwgt: {
     fontFamily: "Roboto-Bold",
   },
 
-  hght:{
-    height:'60px',
-    alignSelf:'stretch',
+  hght: {
+    height: '60px',
+    alignSelf: 'stretch',
     padding: '5',
   },
 
-  hght1:{
-    height:'40px',
+  hght1: {
+    height: '40px',
     alignSelf: 'stretch',
-    padding:'5',
+    padding: '5',
   },
 
-  tab_right:{
+  tab_right: {
     fontFamily: "Roboto-Bold",
   },
 
-  pad5:{
-    paddingTop:'40px',
+  pad5: {
+    paddingTop: '40px',
   },
 
   pb5: { paddingBottom: 5 },
@@ -256,14 +256,14 @@ const Content = () => {
 
       <View style={[styles.table]}>
 
-        <View style={[styles.row, styles.tableRow1]} >
+        <View style={[styles.row, styles.tableRow1]}>
           <Text style={[styles.tableContent, styles.flex20]}>Product Description</Text>
           <Text style={[styles.tableContent, styles.flex20, styles.tab_right]}>Trendz T20 - Chute</Text>
           <Text style={[styles.tableContent, styles.flex20,]}>Delivery date</Text>
           <Text style={[styles.tableContent, styles.flex20, styles.tab_right]}>16/6/2022</Text>
         </View>
 
-        <View style={[styles.row, styles.tableRow1]} >
+        <View style={[styles.row, styles.tableRow1]}>
           <Text style={[styles.tableContent, styles.flex20,]}>Req.Qty</Text>
           <Text style={[styles.tableContent, styles.flex20, styles.tab_right]}>1</Text>
           <Text style={[styles.tableContent, styles.flex20,]}>Commodity</Text>
@@ -274,24 +274,28 @@ const Content = () => {
           <Text style={[styles.tableContent, styles.flex06]}>MC Specification</Text>
           <Text style={[styles.tableContent, styles.flex20, styles.tab_right]}>Primary-1, Secondary-1. Old machine Exchange mark trendz M Series</Text>
         </View>
+
         <View style={[styles.row, styles.tableRow1]}>
           <Text style={[styles.tableContent, styles.flex06]}>MC Fram No</Text>
           <Text style={[styles.tableContent, styles.flex20, styles.tab_right]}>1</Text>
         </View>
+
         <View style={[styles.row, styles.tableRow1]}>
           <Text style={[styles.tableContent, styles.flex06]}>Warranty</Text>
           <Text style={[styles.tableContent, styles.flex20, styles.tab_right]}>One Year</Text>
         </View>
+
         <View style={[styles.row, styles.tableRow1]}>
           <Text style={[styles.tableContent, styles.flex06]}>Place</Text>
           <Text style={[styles.tableContent, styles.flex20, styles.tab_right]}>Theni</Text>
         </View>
+
         <View style={[styles.row, styles.tableRow1]}>
           <Text style={[styles.tableContent, styles.flex06]}>Executive Name</Text>
           <Text style={[styles.tableContent, styles.flex20, styles.tab_right]}>Ilayaraja.B</Text>
         </View>
 
-      </View>  
+      </View>
 
       <View style={[styles.backgroundColorGrand]}>
         <Text style={[styles.title3, styles.changes]}>CHANGES</Text>
@@ -299,24 +303,24 @@ const Content = () => {
 
 
       <View style={[styles.table]}>
-        
-          <View style={[styles.row, styles.tableRow1]} >
-            <Text style={[styles.tableContent, styles.flex07, styles.fontwgt]}>S.No</Text>
-            <Text style={[styles.tableContent, styles.flex20, styles.fontwgt]}>Product Changes</Text>
-            <Text style={[styles.tableContent, styles.flex20, styles.fontwgt]}>Customer Changes</Text>
-          </View>
 
-          <View style={[styles.row, styles.tableRow1]} >
-            <Text style={[styles.tableContent, styles.flex07, styles.hght]}>1</Text>
-            <Text style={[styles.tableContent, styles.flex20, styles.hght]}></Text>
-            <Text style={[styles.tableContent, styles.flex20, styles.hght]}></Text>
-          </View>
+        <View style={[styles.row, styles.tableRow1]} >
+          <Text style={[styles.tableContent, styles.flex07, styles.fontwgt]}>S.No</Text>
+          <Text style={[styles.tableContent, styles.flex20, styles.fontwgt]}>Product Changes</Text>
+          <Text style={[styles.tableContent, styles.flex20, styles.fontwgt]}>Customer Changes</Text>
+        </View>
 
-          <View style={[styles.row, styles.tableRow1]} >
-            <Text style={[styles.tableContent, styles.flex07, styles.hght]}>2</Text>
-            <Text style={[styles.tableContent, styles.flex20, styles.hght]}></Text>
-            <Text style={[styles.tableContent, styles.flex20, styles.hght]}></Text>
-          </View>
+        <View style={[styles.row, styles.tableRow1]} >
+          <Text style={[styles.tableContent, styles.flex07, styles.hght]}>1</Text>
+          <Text style={[styles.tableContent, styles.flex20, styles.hght]}></Text>
+          <Text style={[styles.tableContent, styles.flex20, styles.hght]}></Text>
+        </View>
+
+        <View style={[styles.row, styles.tableRow1]} >
+          <Text style={[styles.tableContent, styles.flex07, styles.hght]}>2</Text>
+          <Text style={[styles.tableContent, styles.flex20, styles.hght]}></Text>
+          <Text style={[styles.tableContent, styles.flex20, styles.hght]}></Text>
+        </View>
 
       </View>
 
@@ -350,14 +354,12 @@ const Content = () => {
           <Text style={[styles.tableContent, styles.flex25, styles.hght]}></Text>
         </View>
 
-      </View>  
+      </View>
 
 
-        
-
-        <View style={[styles.row, styles.tableHeader]}>
-          <Text style={[styles.tableTitle, styles.flex100, styles.hght1]}></Text>
-        </View>
+      <View style={[styles.row, styles.tableHeader]}>
+        <Text style={[styles.tableTitle, styles.flex100, styles.hght1]}></Text>
+      </View>
 
 
       <View>
@@ -368,9 +370,6 @@ const Content = () => {
           <Text style={[styles.flex20, styles.signbox1, styles.pad5]}>Received By & Date</Text>
         </View>
       </View>
-
-      
-
 
       {/* <View style={[styles.row, { alignItems: 'flex-start', marginTop: 20, width: '95%' }]}>
         <Text style={styles.caption}>Notes </Text>
