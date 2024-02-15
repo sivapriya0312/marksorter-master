@@ -25,15 +25,18 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     width:'100vw',
   },
+
   detailColumn: {
     marginBottom: '10px',
     flexDirection: 'column',
     flexGrow: 2
   },
+
   chipTitle: {
     fontSize: '8px',
     padding: 4
   },
+
   chip: {
     alignItems: 'center',
     borderRadius: '4px',
@@ -41,6 +44,7 @@ const styles = StyleSheet.create({
     marginRight: 4,
     marginBottom: 5
   },
+
   leftColumn: {
     flexDirection: 'column',
     width: 36,
@@ -48,30 +52,33 @@ const styles = StyleSheet.create({
     paddingLeft: 4,
     marginTop: 4
   },
+
   image: {
     width: 90,
     height: 28
   },
+
   mainContainer: {
     flexDirection: 'column',
     marginBottom: 0,
   },
+
   row: {
     flexDirection: 'row',
     alignItems: 'flex-start',
     justifyContent: 'flex-end'
   },
+
   title: {
     color: textPrimary,
     fontSize: '8px',
     fontFamily: "Roboto-Bold",
   },
+
   caption: {
     color: textSecondary,
     fontSize: '10px'
   },
-
-
 
   head1:{
     flexDirection: 'row',
@@ -87,6 +94,7 @@ const styles = StyleSheet.create({
     width: '100%',
     // marginTop: '6',
   },
+
   head3:{
     marginTop: '0',
   },
@@ -98,6 +106,7 @@ const styles = StyleSheet.create({
   head2_con1: {
     width: '65%',
   },
+
   head2_con2: {
     alignItems: 'center',
     justifyContent: 'center'
@@ -107,7 +116,6 @@ const styles = StyleSheet.create({
     fontSize: '10',
     fontFamily: "Roboto-Bold",
     padding: '3',
-
   },
 
   title1:{
@@ -115,18 +123,21 @@ const styles = StyleSheet.create({
     fontFamily: "Roboto-Bold",
     fontSize: '8',
   },
+
   title2:{
     backgroundColor:'#FFB74D',
     fontFamily: "Roboto-Bold",
     fontSize: '8',
     padding: '3',
   },
+
   description:{
     fontSize: '8',
     fontWeight: '400',
     padding: '2',
     lineHeight:'1.4',
   },
+
   logoImages:{
     width: '180',
     height: '65',
@@ -150,19 +161,22 @@ const styles = StyleSheet.create({
     alignSelf: 'stretch',
     fontFamily: "Roboto-Bold",
   },
+
   tab2:{
     width:'200px',
     alignSelf: 'stretch',
     fontFamily: "Roboto-Bold",
   },
+
   description1:{
     fontSize: '8',
     padding: '3',
-    // fontWeight:'bolder',
   },
+
   paddingx:{
     paddingHorizontal:'5',     
   },
+  
   paddingy:{
     paddingVertical:'5',     
   },

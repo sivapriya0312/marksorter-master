@@ -4,6 +4,7 @@ import { Text, View, StyleSheet } from '@react-pdf/renderer';
 const textPrimary = '#262626';
 const textSecondary = '#8C8C8C';
 const border = '#F0F0F0';
+
 // custom Style
 const styles = StyleSheet.create({
   container: {
@@ -14,22 +15,26 @@ const styles = StyleSheet.create({
       paddingLeft: 0
     }
   },
+
   card: {
     border: `1px solid black`,
     borderRadius: '2px',
     padding: '20px',
     width: '48%'
   },
+
   title: {
     color: "black",
     fontSize: '10px',
-    fontWeight: 500
   },
+
   caption: {
     color: "black",
     fontSize: '8px',
+    
     padding: '2',
   },
+
   tableTitle: {
     color: "black",
     fontSize: '10px',
@@ -49,19 +54,23 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 12
   },
+
   subRow: {
     justifyContent: 'space-between',
     alignItems: 'flex-start',
     margin: 0,
     paddingBottom: 6
   },
+
   column: {
     flexDirection: 'column'
   },
+
   paragraph: {
     color: '#1F2937',
     fontSize: '10px'
   },
+
   tableHeader: {
     display: 'flex',
     margin: 0,
@@ -90,31 +99,39 @@ const styles = StyleSheet.create({
     display: 'flex',
     width: '100%',
   },
+
   bnk_det_tab1: {
     width: '70%',
   },
+
   bnk_det_tab2: {
     width: '30%',
   },
+
   border: {
     border: '1px solid #d4d4d4',
   },
+
   backgroundColorGrand: {
     backgroundColor: '#FFB74D',
     padding: '5',
   },
+
   tittleLetter: {
     fontSize: '8px',
     padding: '5',
   },
+
   title3: {
     fontSize: '10px',
     fontFamily: "Roboto-Bold",
   },
+
   title2: {
     fontSize: '8px',
     paddingTop: '2',
   },
+
   padding1: {
     padding: '5px 0px 0px',
   },
@@ -132,17 +149,20 @@ const styles = StyleSheet.create({
     fontSize: '8px',
     lineHeight: '1.3',
   },
+
   title5: {
     fontSize: '8px',
     lineHeight: '1.3',
     paddingTop: '4px',
   },
+
   text_right: {
     display: 'flex',
     justifyContent: 'flex-end',
     alignItems: 'flex-end',
     alignContent: 'flex-end',
   },
+
   box: {
     border: '1px solid #d4d4d4',
     width: '100',
@@ -152,6 +172,7 @@ const styles = StyleSheet.create({
   signbox: {
     display: 'flex',
   },
+
   signbox1: {
     height: '60px',
     border: '1px solid #D4D4D4',
@@ -183,6 +204,7 @@ const styles = StyleSheet.create({
   tableflex1: {
     width: '100%',
   },
+
   tabwth1: {
     width: '100%',
     border: '1px solid #D4D4D4',

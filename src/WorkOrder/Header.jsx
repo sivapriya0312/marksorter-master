@@ -21,11 +21,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     width: '100vw',
   },
+
   detailColumn: {
     marginBottom: '10px',
     flexDirection: 'column',
     flexGrow: 2
   },
+
   chipTitle: {
     fontSize: '8px',
     padding: 4
@@ -35,28 +37,34 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     marginBottom: 0,
   },
+
   row: {
     flexDirection: 'row',
     alignItems: 'flex-start',
     justifyContent: 'flex-end'
   },
+
   head1: {
     flexDirection: 'row',
     backgroundColor: '#FFB74D',
     justifyContent: 'center',
     width: '100%',
   },
+
   title: {
     color: textPrimary,
     fontSize: '8px'
   },
+
   caption: {
     color: textSecondary,
     fontSize: '10px'
   },
+
   padding1: {
     padding: '5px 5px 5px 5px',
   },
+
   flex03: { flex: '0.3 0 0px' },
   flex07: { flex: '0.7 0 0px' },
   flex06: { flex: '0.6 0 0px' },
@@ -87,6 +95,7 @@ const styles = StyleSheet.create({
     fontSize: '8',
     fontFamily: "Roboto-Bold",
   },
+
   title2: {
     backgroundColor: '#FFB74D',
     fontSize: '10',
@@ -134,15 +143,19 @@ const styles = StyleSheet.create({
     fontSize: '8',
     padding: '2',
   },
+
   paddingx: {
     paddingHorizontal: '5',
   },
+
   paddingy: {
     paddingVertical: '5',
   },
+
   signbox: {
     display: 'flex',
   },
+
   signbox1: {
     border: '1px solid #D4D4D4',
     textAlign: 'left',
@@ -154,8 +167,6 @@ const styles = StyleSheet.create({
 
 const Header = () => {
   return (
-
-
 
     <View style={styles.mainContainer}>
 

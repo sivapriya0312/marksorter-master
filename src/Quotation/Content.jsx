@@ -34,11 +34,13 @@ const styles = StyleSheet.create({
     padding: '20px',
     width: '48%'
   },
+
   title: {
     color: "black",
     fontSize: '10px',
     fontFamily: "Roboto-Bold",
   },
+
   caption: {
     color: "black",
     fontSize: '8px',
@@ -60,28 +62,34 @@ const styles = StyleSheet.create({
     fontFamily: "Roboto-Bold",
     backgroundColor: '#FFB74D',
   },
+
   tableCell: {
     color: "black",
     fontSize: '8px'
   },
+
   row: {
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 12
   },
+
   subRow: {
     justifyContent: 'space-between',
     alignItems: 'flex-start',
     margin: 0,
     paddingBottom: 5
   },
+
   column: {
     flexDirection: 'column'
   },
+
   paragraph: {
     color: '#1F2937',
     fontSize: '10px'
   },
+
   tableHeader: {
     justifyContent: 'space-between',
     margin: 0,
@@ -110,34 +118,42 @@ const styles = StyleSheet.create({
     display: 'flex',
     width: '100%',
   },
+
   bnk_det_tab1: {
     width: '70%',
   },
+
   bnk_det_tab2: {
     width: '30%',
   },
+  
   border: {
     border: '1px solid #d4d4d4',
   },
+
   backgroundColorGrand: {
     backgroundColor: '#FFB74D',
     padding: '5',
     fontFamily: "Roboto-Bold",
   },
+
   tittleLetter: {
     fontSize: '8px',
     padding: '5',
     fontFamily: "Roboto-Bold",
   },
+
   title3: {
     fontSize: '8px',
     fontWeight: "heavy",
   },
+
   title2: {
     fontSize: '8px',
     paddingTop: '2',
     fontFamily: "Roboto-Bold",
   },
+
   padding1: {
     padding: '5px 0px 0px',
   },
@@ -150,25 +166,28 @@ const styles = StyleSheet.create({
 
   signature1: {
     width: '50%',
-
   },
+
   title4: {
     fontSize: '8px',
     lineHeight: '1.3',
     fontFamily: "Roboto-Bold",
   },
+
   title5: {
     fontSize: '8px',
     lineHeight: '1.3',
     paddingTop: '4px',
     fontFamily: "Roboto-Bold",
   },
+  
   text_right: {
     display: 'flex',
     justifyContent: 'flex-end',
     alignItems: 'flex-end',
     alignContent: 'flex-end',
   },
+
   box: {
     // border: '1px solid #d4d4d4',
     width: '100',
@@ -178,6 +197,7 @@ const styles = StyleSheet.create({
   hght1: {
     height: '30px',
   },
+  
   tableContent: {
     color: "black",
     fontSize: '8px',
