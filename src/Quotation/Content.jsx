@@ -107,8 +107,8 @@ const styles = StyleSheet.create({
 
   tableCell: {
     color: "black",
-    fontSize: '8px',
-    padding: '2',
+    fontSize: '9px',
+    padding: '1',
   },
 
   bnk_det: {
@@ -160,6 +160,7 @@ const styles = StyleSheet.create({
     padding: '5px 5px',
     flexDirection: 'row',
     display: 'flex',
+    marginTop:'12px',
   },
 
   signature1: {
@@ -458,7 +459,7 @@ const Content = () => {
         <View style={[styles.signature2, styles.text_right]} >
           <Text style={styles.title4}>For PROMECH INDUSTRIES PRIVATE LIMITED</Text>
           <Text style={styles.box}></Text>
-          <Text style={styles.title5}>Athorized Signatory</Text>
+          <Text style={styles.title5}>Authorized Signatory</Text>
         </View>
 
       </View>
