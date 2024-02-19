@@ -295,7 +295,7 @@ const Content = () => {
         </View>
 
         <View style={[styles.row, styles.tableRow1]}>
-          <Text style={[styles.tableContent, styles.flex06]}>MC Fram No</Text>
+          <Text style={[styles.tableContent, styles.flex06]}>MC Frame No</Text>
           <Text style={[styles.tableContent, styles.flex20, styles.tab_right]}>1</Text>
         </View>
 
